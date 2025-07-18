@@ -2,15 +2,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>GET vs Post Demo</title>
 </head>
 <body>
-<h3>Login Form</h3>
-	<form action="mylogin" method="post">
-		<input type="text" name="email1" placeholder="Enter your email" /><br/><br/>
-		<input type="password" name="pass1" placeholder="Enter password" /><br/><br/>
-		<input type="submit" value="Click Me" /><br/><br/>
 
+	<p>
+		This page demonstrates the difference between <strong>HTTP
+			GET</strong> and <strong>POST</strong> methods. <br /> GET appends form data
+		to the URL, while POST sends it in the request body.
+	</p>
+
+	<h2>Get Method Form</h2>
+	<form action="mylogin" method="get">
+		<input type="text" name="email1" placeholder="Enter your email" /><br />
+		<br /> <input type="password" name="pass1"
+			placeholder="Enter password" /><br />
+		<br /> <input type="submit" value="Login with GET" /><br />
+		<br />
+	</form>
+
+	<hr />
+	<h2>Post Method Form</h2>
+	<form action="mylogin" method="post">
+		<input type="text" name="email1" placeholder="Enter your email" /><br />
+		<br /> <input type="password" name="pass1"
+			placeholder="Enter password" /><br />
+		<br /> <input type="submit" value="Login with POST" /><br />
+		<br />
 	</form>
 
 </body>
